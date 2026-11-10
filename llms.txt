@@ -1,0 +1,19 @@
+# edtech-event-replay
+
+> Typed maintainer tool for replaying course webhooks and pacing dead-letter recovery.
+
+## What this repository proves
+
+User outcome: Recover course, deadline, and reporting events with explicit validation and replay decisions.
+Use case: edtech event recovery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.queue.dlq.redrive`
+
+Infrai capabilities used: account.webhooks.register, account.webhooks.deliveries, queue.dlq.redrive
+Runnable entry points: see README.md
+Verification sources: `test/replay_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

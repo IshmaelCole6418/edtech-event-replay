@@ -1,0 +1,19 @@
+{
+  "name": "edtech-event-replay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "tsx --test test/replay_policy.test.ts",
+    "typecheck": "tsc --noEmit",
+    "maintain": "tsx src/replay_maintainer.ts"
+  },
+  "dependencies": {
+    "tsx": "^4.19.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
